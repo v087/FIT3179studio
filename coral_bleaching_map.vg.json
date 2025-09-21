@@ -33,7 +33,7 @@
         {"filter": "datum.Date_Year >= 2015 && datum.Date_Year <= 2020"},
         {"filter": "isValid(datum.Percent_Bleaching) && datum.Percent_Bleaching != null"}
       ],
-      "mark": {"type": "circle", "opacity": 0.9, "stroke": "white", "strokeWidth": 0.5},
+      "mark": {"type": "circle", "opacity": 0.7, "stroke": "white", "strokeWidth": 0.1},
       "encoding": {
         "longitude": {"field": "Longitude_Degrees", "type": "quantitative"},
         "latitude": {"field": "Latitude_Degrees", "type": "quantitative"},
@@ -41,7 +41,7 @@
         "color": {
           "field": "Percent_Bleaching",
           "type": "quantitative",
-          "title": "Percent of Coral Cover Bleached",
+          "title": "Coral Cover Bleached (%)",
           "scale": {"domain": [0, 100], "scheme": "yelloworangered", "clamp": true},
           "legend": {"format": ".0f"}
         },
@@ -49,7 +49,7 @@
           {"field": "Site_ID", "title": "Site ID"},
           {"field": "Site_Name", "title": "Site Name"},
           {"field": "Country_Name", "title": "Country Name"},
-          {"field": "Percent_Bleaching", "type": "quantitative", "format": ".1f", "title": "Percent of Coral Cover Bleached"},
+          {"field": "Percent_Bleaching", "type": "quantitative", "format": ".1f", "title": "Coral Cover Bleached (%)"},
           {"field": "Depth_m", "type": "quantitative", "format": ".0f", "title": "Depth (m)"},
           {"field": "Temperature_Mean", "type": "quantitative", "format": ".1f", "title": "Temperature (mean)"},
           {"field": "Date_Year", "type": "quantitative", "title": "Year"}
